@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="el">
+
+<head>
+    <title>Homework 2</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <script>
+        'use strict';
+
+        let continueIteration = true;
+        const list = [];
+
+        while (continueIteration) {
+            const input = prompt("Input your data");
+
+            if (input !== '') {
+                list.push(input);
+            }
+            if (input === '') {
+                continueIteration = false;
+            }
+        }
+
+        let isSorted = true;
+        for (let i = 0; i < list.length; i++) {
+            if (list[i+1] && list[i+1].length ) {
+                if(list[i].length > list[i+1].length) {
+                    isSorted = false;
+                    break;
+                }
+            }  
+        }
+        if (isSorted) {
+            console.log('edw')
+            alert("Sorted");
+        } else {
+            console.log('parakatw')
+            alert("Not sorted");
+        }
+
+    </script>
+
+</body>
+
+
+

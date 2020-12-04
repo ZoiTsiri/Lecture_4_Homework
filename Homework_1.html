@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="el">
+
+<head>
+    <title>Homework 1</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <script>
+        'use strict';
+
+        const planet = [`Mars`, `Saturn`, `Uranus`];
+
+        planet.push(`Neptune`, `Pluto`);
+
+        planet.unshift(`Mercury`, `Venus`, `Earth`, `Earth's Moon`);
+
+        planet.splice(5, 0, `Jupiter`);
+
+        planet.splice(3,1);
+
+        planet.splice(8, 1);
+        
+        console.log(planet);
+
+        for (let i = 0; i < planet.length; i++) {
+			console.log(planet[i]);
+		}
+
+        
+        
+
+
+
+
+
+    </script>
+
+
+
+</body>
